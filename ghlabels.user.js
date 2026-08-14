@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Colored Repository Visibility Labels
-// @version      1.0.0
+// @version      1.0.1
 // @description  Colors the Private and Public labels on GitHub repositories to be more visible
 // @author       brewffee
 // @match        https://github.com/*
@@ -34,7 +34,7 @@
     }
 
     function applyStyles() {
-        document.querySelectorAll('span.Label.Label--secondary, span.Label.Label--attention').forEach(l => {
+        document.querySelectorAll('span.Label.Label--secondary, span.Label.Label--attention, [data-testid="repo-visibility-label"]').forEach(l => {
             if (DEFAULT_STYLES[l.innerText]) Object.assign(l.style, DEFAULT_STYLES[l.innerText]);
         });
     }
