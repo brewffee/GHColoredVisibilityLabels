@@ -33,8 +33,15 @@
         }
     }
 
+    const SELECTORS = [
+        'span.Label.Label--secondary',
+        'span.Label.Label--attention',
+        '[data-testid="repo-visibility-label"]',
+        '[data-component="Label"]'
+    ]
+
     function applyStyles() {
-        document.querySelectorAll('span.Label.Label--secondary, span.Label.Label--attention, [data-testid="repo-visibility-label"]').forEach(l => {
+        document.querySelectorAll(SELECTORS.join(', ')).forEach(l => {
             if (DEFAULT_STYLES[l.innerText]) Object.assign(l.style, DEFAULT_STYLES[l.innerText]);
         });
     }
