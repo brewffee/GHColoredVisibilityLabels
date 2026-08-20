@@ -5,7 +5,7 @@ Enhances the readability of visibility labels on GitHub repositories by adding a
 
 ## Installation
 - Install a userscript manager of your choice ([Tampermonkey](https://www.tampermonkey.net/), 
-  [Violentmonkey](https://violentmonkey.net/), and [Greasemonkey](https://www.greasemonkey.net/) are all good options)
+  [Violentmonkey](https://violentmonkey.github.io/), and [Greasemonkey](https://www.greasespot.net/) are all good options)
 - Click [this link](https://github.com/brewffee/GHColoredVisibilityLabels/raw/refs/heads/master/ghlabels.user.js), which
   should prompt you to install the script.
 - You're done! The script will apply upon refresh!
